@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="POM_Framework" parallel="tests" allow-return-values="true" verbose="1" thread-count="5">
+	
+
+	<test name="Functional Automation- Firefox">
+	<parameter name="browser" value="firefox" />
+	<parameter name="username" value="sagar.ladwa@causeway.com"/>
+	<parameter name="password" value="Yahoo@123"/>
+	<parameter name="OUDisplayName" value="SIP Development"/>
+	<parameter name="OUId" value="ce448277-6cfc-459b-8511-13313db97430"/>
+	<parameter name="listWorkflowsUrl" value="http://bg-sip-activemq:8080/jbpm-console/rest/orgUnit/ce448277-6cfc-459b-8511-13313db97430/processes"/>
+		<classes>
+			<class name="com.test.testcases.Test99GuruLogin" >
+			<methods>
+			<!-- <include name="checkValidUser"/>
+			<include name="checkUserAccessRights"/>
+			<include name="checkEmailConnectorRoutinesAccess"/>
+			<include name="checkEmailTemplateEditorRoutinesAccess"/>
+			<include name="checkMailboxScannerRoutinesAccess"/>
+			<include name="checkQuartzSchedulerRoutinesAccess"/>
+			<include name="checkFTPConnectionRoutinesAccess"/>
+			<include name="checkProcessDeploymentAccess"/> 
+			<include name="checkProcessDefinitionsAccess"/>-->
+	        </methods>
+	        </class>
+		</classes>
+	</test>
+	
+	
+</suite>
+
